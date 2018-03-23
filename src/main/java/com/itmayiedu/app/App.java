@@ -7,14 +7,16 @@ import org.springframework.boot.orm.jpa.EntityScan;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-@ComponentScan(basePackages = {"com.itmayiedu.controller","com.itmayiedu.service"})
-@EnableJpaRepositories("com.itmayiedu.dao")
+@ComponentScan(basePackages = { "com.itmayiedu.yml.controller" })
+// @EnableJpaRepositories("com.itmayiedu.dao")
 @EnableAutoConfiguration
-@EntityScan("com.itmayiedu.entity")
+// @EntityScan("com.itmayiedu.entity")
+
 public class App {
 
     public static void main(String[] args) {
-        //主函数运行springboot项目
+        // 主函数运行springboot项目
         SpringApplication.run(App.class, args);
     }
+
 }
